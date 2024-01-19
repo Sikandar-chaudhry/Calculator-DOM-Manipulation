@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Designer Calculator</title>
+</head>
+<body>
+    
+    <div class="splash">
+        <div class="loader-wrapper-one"></div>
+        <div class="loader-wrapper-two">
+            <span>CALCULATOR</span>
+        </div>
+    </div>
+
+    <main class="container">
+        <h1>CALCULATE</h1>
+        <div class="calculator">
+            <input type="text" id="input-field" autofocus>
+            <div class="numpad">
+                <input type="button" class="num-button" value="9" onclick="writeInInputField('9')"></input>
+                <input type="button" class="num-button" value="8" onclick="writeInInputField('8')"></input>
+                <input type="button" class="num-button" value="7" onclick="writeInInputField('7')"></input>
+                <input type="button" class="num-button" value="/" onclick="writeInInputField('/')"></input>
+                <input type="button" class="num-button" value="6" onclick="writeInInputField('6')"></input>
+                <input type="button" class="num-button" value="5" onclick="writeInInputField('5')"></input>
+                <input type="button" class="num-button" value="4" onclick="writeInInputField('4')"></input>
+                <input type="button" class="num-button" value="x" onclick="writeInInputField('*')"></input>
+                <input type="button" class="num-button" value="3" onclick="writeInInputField('3')"></input>
+                <input type="button" class="num-button" value="2" onclick="writeInInputField('2')"></input>
+                <input type="button" class="num-button" value="1" onclick="writeInInputField('1')"></input>
+                <input type="button" class="num-button" value="-" onclick="writeInInputField('-')"></input>
+                <input type="button" class="num-button" value="0" onclick="writeInInputField('0')"></input>
+                <input type="button" class="num-button" value="AC" onclick="clearInputField()"></input>
+                <input type="button" class="num-button" value="=" onclick="calculate()"></input>
+                <input type="button" class="num-button" value="+" onclick="writeInInputField('+')"></input>
+            </div> 
+        </div>
+    </main>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
